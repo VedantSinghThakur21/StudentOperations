@@ -42,4 +42,8 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+
+    public void displayStudent() {
+        System.out.println("PRN" + prn + "\nName: " + name + "\nDOB: " + dob + "\nMarks: " + marks);
+    }
 }
