@@ -78,4 +78,17 @@ public class StudentManager {
         System.out.println("Student not found!");
     }
 
+    public void deleteStudent(Scanner sc) {
+        System.out.print("Enter PRN to delete: ");
+        String prn = sc.next();
+        for (int i = 0; i < studentList.size(); i++) {
+            if (studentList.get(i).getPrn().equals(prn)) {
+                studentList.remove(i);
+                System.out.println("Student deleted!");
+                return;
+            }
+        }
+        System.out.println("Student not found!");
+    }
+
 }
