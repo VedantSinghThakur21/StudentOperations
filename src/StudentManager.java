@@ -59,6 +59,17 @@ public class StudentManager {
         System.out.println("Student not found!");
     }
 
+    public void searchByPosition(Scanner sc) {
+        System.out.print("Enter Position (Index starts from 0): ");
+        int pos = sc.nextInt();
+        if (pos >= 0 && pos < studentList.size()) {
+            System.out.println(" Student at Position " + pos + ":");
+            studentList.get(pos).displayStudent();
+        } else {
+            System.out.println(" Invalid position!");
+        }
+    }
+
     public void updateStudent(Scanner sc) {
         System.out.print("Enter PRN to update details: ");
         String prn = sc.next();
