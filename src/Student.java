@@ -44,6 +44,6 @@ public class Student {
     }
 
     public void displayStudent() {
-        System.out.println("PRN" + prn + "\nName: " + name + "\nDOB: " + dob + "\nMarks: " + marks);
+        System.out.println("\nPRN: " + prn + "\nName: " + name + "\nDOB: " + dob + "\nMarks: " + marks);
     }
 }

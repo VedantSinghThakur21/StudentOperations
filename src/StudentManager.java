@@ -8,6 +8,9 @@ public class StudentManager {
     }
 
     public void addStudent(Scanner sc) {
+
+        sc.nextLine();
+
         System.out.print("Enter PRN: ");
         String prn = sc.nextLine();
         System.out.print("Enter Name: ");
