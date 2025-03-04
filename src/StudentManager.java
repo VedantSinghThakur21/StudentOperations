@@ -22,4 +22,15 @@ public class StudentManager {
 
     }
 
+    public void displayStudents() {
+        if (studentList.isEmpty()) {
+            System.out.println("Nothing to show!");
+            return;
+        }
+        for (Student s : studentList) {
+            System.out.println(s);
+            s.displayStudent();
+        }
+    }
+
 }
