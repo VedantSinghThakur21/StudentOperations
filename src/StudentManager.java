@@ -59,4 +59,23 @@ public class StudentManager {
         System.out.println("Student not found!");
     }
 
+    public void updateStudent(Scanner sc) {
+        System.out.print("Enter PRN to update details: ");
+        String prn = sc.next();
+        for (Student s : studentList) {
+            if (s.getPrn().equals(prn)) {
+                System.out.print("Enter new Name: ");
+                s.setName(sc.next());
+                System.out.print("Enter new Date of Birth: ");
+                s.setDob(sc.next());
+                System.out.print("Enter new Marks: ");
+                s.setMarks(sc.nextDouble());
+
+                System.out.println("Student details updated!");
+                return;
+            }
+        }
+        System.out.println("Student not found!");
+    }
+
 }
